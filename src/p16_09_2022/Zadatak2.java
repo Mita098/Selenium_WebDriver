@@ -20,9 +20,14 @@ public class Zadatak2 {
 				driver.findElement(By.xpath("//table"));
 		HtmlTable table = new HtmlTable(tabla);
 		System.out.println(table.getCellText(3, 1));
+		table.getColumnsByName("Athlete");
+		for (int i = 0; i < table.getColumnsByName("Athlete").size(); i++) {
+			System.out.println(table.getColumnsByName("Athlete").get(i).getText());
+		}
 		
 		Thread.sleep(5000);
 		driver.quit();
+
 	}
 
 }

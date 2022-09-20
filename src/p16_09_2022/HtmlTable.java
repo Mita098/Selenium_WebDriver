@@ -19,18 +19,28 @@ public class HtmlTable {
 		webelement.findElement(By.xpath("//tr[" + row + "]/td[" + cell + "]"));
 		return x.getText();
 	}
-//	public WebElement getColumnsByName(String naslov) {
-//		List <WebElement> elementi = new ArrayList<WebElement>();
-//		List <WebElement> elementiZaVracanje = new ArrayList<WebElement>();
-//
-//		elementi =
-//				this.webelement.findElements(By.xpath("//table"));
-//		for (int i = 0; i < elementi.size(); i++) {
-//			if (elementi.get(i).getText().equals(naslov)) {
-//				for (int j = 0; j < elementi.size(); j++) {
-//					
-//				}
-//			}
-//		}
-//	}
+	public List<WebElement> getColumnsByName(String naslov) {
+		List <WebElement> th = 
+				webelement.findElements(By.xpath("//table[contains(@class, 'searchable sortable')]//th"));
+		List<WebElement> telo=
+				webelement.findElements(By.xpath("//table[contains(@class, 'searchable sortable')]//tr"));
+		List<WebElement> kolone = new ArrayList<WebElement>();
+		for (int i = 0; i < th.size(); i++) {
+			int x = 0;
+			x = x + i + 1;
+			if (naslov.equals(th.get(i).getText())) {
+				for (int j = 1; j < telo.size(); j++) {
+//					if (i > 0) {
+						kolone.add(webelement.findElement(By.xpath("//table[contains(@class, 'searchable sortable')]//tr[" + j + "]/td[" + x + "]")));
+
+//					}else {
+//					kolone.add(webelement.findElement(By.xpath("//table[contains(@class, 'searchable sortable')]//tr[" + j + "]/td")));
+//					}
+				}
+			}
+		}
+		return kolone;
+			
+		
+	}
 }

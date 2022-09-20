@@ -42,9 +42,9 @@ public class DomaciZadatak1 {
 			wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//img[@loading='lazy']"), i));
 			driver.findElement(By.xpath("//img[@loading='lazy']")).click();
 			Thread.sleep(1000);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Use One Side Only']")));
-			driver.findElement(By.xpath("//*[text()='Use One Side Only']")).click();
-			Thread.sleep(1000);
+//			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Use One Side Only']")));
+//			driver.findElement(By.xpath("//*[text()='Use One Side Only']")).click();
+//			Thread.sleep(1000);
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='Done']")));
 			driver.findElement(By.xpath("//*[text()='Done']")).click();
 			Thread.sleep(1000);	

@@ -2,10 +2,10 @@ package p15_09_2022;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Zadatak5 {
