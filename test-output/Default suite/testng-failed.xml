@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="domaci_zadatak_19_09_2022.BootstrapTableTests">
+      <class name="p20_09_2022.KatalonShopTests">
         <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyErrorIsDisplayedWhenUsernameIsMissing"/>
           <include name="afterClass"/>
-          <include name="deleteRow"/>
           <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- domaci_zadatak_19_09_2022.BootstrapTableTests -->
+      </class> <!-- p20_09_2022.KatalonShopTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

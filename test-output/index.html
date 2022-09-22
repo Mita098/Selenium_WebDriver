@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\PC\AppData\Local\Temp\testng-eclipse--173553815\testng-customsuite.xml</span>
+                    <span>C:\Users\PC\AppData\Local\Temp\testng-eclipse-1514694316\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="domaci_zadatak_19_09_2022.BootstrapTableTests" class="method navigator-link" hash-for-method="deleteRow">deleteRow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,12 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="domaci_zadatak_19_09_2022.BootstrapTableTests" class="method navigator-link" hash-for-method="editRow">editRow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="p20_09_2022.KatalonShopTests" class="method navigator-link" hash-for-method="verifyErrorIsDisplayedWhenPasswordIsMissing">verifyErrorIsDisplayedWhenPasswordIsMissing</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="domaci_zadatak_19_09_2022.BootstrapTableTests" class="method navigator-link" hash-for-method="takeAScreenshot">takeAScreenshot</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="p20_09_2022.KatalonShopTests" class="method navigator-link" hash-for-method="verifyErrorIsDisplayedWhenPasswordIsWrong">verifyErrorIsDisplayedWhenPasswordIsWrong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="p20_09_2022.KatalonShopTests" class="method navigator-link" hash-for-method="verifyErrorIsDisplayedWhenUsernameIsMissing">verifyErrorIsDisplayedWhenUsernameIsMissing</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -138,74 +129,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">domaci_zadatak_19_09_2022.BootstrapTableTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteRow">
-                  </a> <!-- deleteRow -->
-                  <span class="method-name">deleteRow</span>
-                  <div class="stack-trace">java.lang.AssertionError: ERROR:Table should contain one row less! expected [1] but found [2]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at domaci_zadatak_19_09_2022.BootstrapTableTests.deleteRow(BootstrapTableTests.java:94)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">domaci_zadatak_19_09_2022.BootstrapTableTests</span>
+              <span class="class-name">p20_09_2022.KatalonShopTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="editRow">
-                  </a> <!-- editRow -->
-                  <span class="method-name">editRow</span>
+                  <a name="verifyErrorIsDisplayedWhenPasswordIsMissing">
+                  </a> <!-- verifyErrorIsDisplayedWhenPasswordIsMissing -->
+                  <span class="method-name">verifyErrorIsDisplayedWhenPasswordIsMissing</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="takeAScreenshot">
-                  </a> <!-- takeAScreenshot -->
-                  <span class="method-name">takeAScreenshot</span>
+                  <a name="verifyErrorIsDisplayedWhenPasswordIsWrong">
+                  </a> <!-- verifyErrorIsDisplayedWhenPasswordIsWrong -->
+                  <span class="method-name">verifyErrorIsDisplayedWhenPasswordIsWrong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorIsDisplayedWhenUsernameIsMissing">
+                  </a> <!-- verifyErrorIsDisplayedWhenUsernameIsMissing -->
+                  <span class="method-name">verifyErrorIsDisplayedWhenUsernameIsMissing</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PC\AppData\Local\Temp\testng-eclipse--173553815\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\PC\AppData\Local\Temp\testng-eclipse-1514694316\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -222,7 +170,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;domaci_zadatak_19_09_2022.BootstrapTableTests&quot;/&gt;
+      &lt;class name=&quot;p20_09_2022.KatalonShopTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -264,22 +212,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'editRow')
-data.setCell(0, 2, 'domaci_zadatak_19_09_2022.BootstrapTableTests')
-data.setCell(0, 3, 1990);
+data.setCell(0, 1, 'verifyErrorIsDisplayedWhenUsernameIsMissing')
+data.setCell(0, 2, 'p20_09_2022.KatalonShopTests')
+data.setCell(0, 3, 1572);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteRow')
-data.setCell(1, 2, 'domaci_zadatak_19_09_2022.BootstrapTableTests')
-data.setCell(1, 3, 1455);
+data.setCell(1, 1, 'verifyErrorIsDisplayedWhenPasswordIsWrong')
+data.setCell(1, 2, 'p20_09_2022.KatalonShopTests')
+data.setCell(1, 3, 1412);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'takeAScreenshot')
-data.setCell(2, 2, 'domaci_zadatak_19_09_2022.BootstrapTableTests')
-data.setCell(2, 3, 344);
+data.setCell(2, 1, 'verifyErrorIsDisplayedWhenPasswordIsMissing')
+data.setCell(2, 2, 'p20_09_2022.KatalonShopTests')
+data.setCell(2, 3, 1353);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -305,52 +253,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">domaci_zadatak_19_09_2022.BootstrapTableTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">p20_09_2022.KatalonShopTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">5756 ms</span>
+                <span class="method-start">1392 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">editRow</span>
-                <span class="method-start">8026 ms</span>
+                <span class="method-name">verifyErrorIsDisplayedWhenUsernameIsMissing</span>
+                <span class="method-start">3844 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">10019 ms</span>
+                <span class="method-start">5418 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">10021 ms</span>
+                <span class="method-start">5419 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">deleteRow</span>
-                <span class="method-start">12005 ms</span>
+                <span class="method-name">verifyErrorIsDisplayedWhenPasswordIsMissing</span>
+                <span class="method-start">6064 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">13461 ms</span>
+                <span class="method-start">7418 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">13462 ms</span>
+                <span class="method-start">7419 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">takeAScreenshot</span>
-                <span class="method-start">14921 ms</span>
+                <span class="method-name">verifyErrorIsDisplayedWhenPasswordIsWrong</span>
+                <span class="method-start">8049 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15266 ms</span>
+                <span class="method-start">9461 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">15267 ms</span>
+                <span class="method-start">9462 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
