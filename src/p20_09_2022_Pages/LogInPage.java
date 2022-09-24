@@ -32,4 +32,10 @@ public class LogInPage {
 	public WebElement getInvalidPasswordMassage() {
 		return driver.findElement(By.xpath("//*[text()=': The password you entered for the username ']"));
 	}
+	public WebElement getInvalidUsernameMassage() {
+		return driver.findElement(By.xpath("//*[text()=': Invalid username. ']"));
+	}
+	public WebElement getSuccessfulLoginMassage() {
+		return driver.findElement(By.xpath("//*[text()='Hello ']"));
+	}
 }

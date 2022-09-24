@@ -51,7 +51,7 @@ public class KatalonShopTests {
 		driver.get(baseUrl);
 	}
 
-	@Test(priority = 10)
+//	@Test(priority = 10)
 	public void addingProductWithQuantityToTheCart() {
 		driver.get(baseUrl+"/product/flying-ninja/");
 		productPage.getQuantityInput().sendKeys("3");
@@ -63,7 +63,7 @@ public class KatalonShopTests {
 		Assert.assertEquals(cartPage.getNumberOfProductsInCart().size(), 1,"Error: Cart should contain only one item");
 	}
 
-	@Test (priority = 20)
+//	@Test (priority = 20)
 	public void removingProductFromCart() throws InterruptedException {
 		navPage.getCartLink().click();
 		Assert.assertTrue(driver.getCurrentUrl().contains("/cart"), "Error: Cart page url should contain '/cart'");
@@ -72,21 +72,21 @@ public class KatalonShopTests {
 		cartPage.waitForEmptyCartMassageToBeVisible();
 		Assert.assertEquals(cartPage.getNumberOfProductsInCart().size(), 0,"Error: Cart should contain no items");
 	}
-	@Test (priority = 30)
+//	@Test (priority = 30)
 	public void verifyErrorIsDisplayedWhenUsernameIsMissing()  {
 		navPage.getMyAccountLink().click();
 		login.getLoginButton().click();
 		
 		Assert.assertEquals(login.getErrorMassage().getText(),"Error: Username is required.", "Error:Username is required massage should apeer");
 	}
-	@Test (priority = 40)
+//	@Test (priority = 40)
 	public void verifyErrorIsDisplayedWhenPasswordIsMissing()  {
 		navPage.getMyAccountLink().click();
 		login.getUsernameInput().sendKeys("customer");
 		login.getLoginButton().click();
 		Assert.assertEquals(login.getErrorPasswordMassage().getText(),"ERROR: The password field is empty.", "'ERROR: The password field is empty' massage should apeer");
 	}
-	@Test (priority = 50)
+//	@Test (priority = 50)
 	public void verifyErrorIsDisplayedWhenPasswordIsWrong()  {
 		navPage.getMyAccountLink().click();
 		login.getUsernameInput().sendKeys("customer");
@@ -97,6 +97,27 @@ public class KatalonShopTests {
 				"Error: Wrong password error massage should apeer!");
 
 	}
+//	@Test (priority = 60)
+	public void verifyErrorIsDisplayedWhenUserDoesNotExist()  {
+		navPage.getMyAccountLink().click();
+		login.getUsernameInput().sendKeys("invaliduser");
+		login.getPasswprdInput().sendKeys("ex: pass1234");
+		login.getLoginButton().click();
+		Assert.assertEquals(login.getInvalidUsernameMassage().getText(),
+				"ERROR: Invalid username. Lost your password?",
+				"Error: Invalid username error massage should apeer!");
+	}
+	@Test (priority = 70)
+	public void verifySuccessfulLogin()  {
+		navPage.getMyAccountLink().click();
+		login.getUsernameInput().sendKeys("customer");
+		login.getPasswprdInput().sendKeys("crz7mrb.KNG3yxv1fbn");
+		login.getLoginButton().click();
+		Assert.assertEquals(login.getSuccessfulLoginMassage().getText(),
+				"Hello Katalon Parlitul_Changed (not Katalon Parlitul_Changed? Log out)",
+				"Error: succesfull login massage should apeer!");
+	}
+	
 	@AfterMethod
 	public void afterMethod() {
 		System.out.println("After Method");

@@ -6,8 +6,8 @@
       <class name="p20_09_2022.KatalonShopTests">
         <methods>
           <include name="beforeMethod"/>
-          <include name="verifyErrorIsDisplayedWhenUsernameIsMissing"/>
           <include name="afterClass"/>
+          <include name="verifySuccessfulLogin"/>
           <include name="afterMethod"/>
           <include name="setup"/>
         </methods>
